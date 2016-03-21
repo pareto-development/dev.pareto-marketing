@@ -1,0 +1,155 @@
+<script src="access/index.js"></script>
+
+  <div id="addform">
+    <div class="container">
+    	<div class="row">
+    		<form  id="add"  method="post" action="javascript:void(0);">
+    		<div class="form-group">
+    			<label for="exampleInputEmail1"></label>
+    			<input type="text" class="form-control" id="name" placeholder="Название" required>
+  			</div>
+  			<div class="form-group">
+    			<label for="exampleInputEmail1"></label>
+    			<input type="text" class="form-control" id="adress" placeholder="Адрес">
+  			</div>
+  			<div class="form-group">
+    			<label for="exampleInputEmail1"></label>
+    			<input type="text" class="form-control" id="login" placeholder="Логин" required>
+  			</div>
+  			<div class="form-group">
+    			<label for="exampleInputEmail1"></label>
+    			<input type="text" class="form-control" id="password" placeholder="Пароль" required>
+  			</div>
+  			<div class="form-group">
+    			<label for="exampleInputEmail1"></label>
+    			<input type="text" class="form-control" id="info" placeholder="Информация">
+  			</div>
+        <div class="form-group">
+          <label for="exampleInputEmail1"></label>
+          <select class="form-control" id="type">
+            <option name="1">Наши доступы</option>
+            <option name="2">Клиентские доступы</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1"></label>
+          <select class="form-control" id="nclient">
+            
+          </select>
+        </div>
+  			<input type="submit" class="btn btn-success" value="Добавить">
+  			<button type="button" class="btn btn-danger" id="addcans">Отменить</button>
+
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-warning  pull-right" data-toggle="modal" data-target="#myModal">
+  Новый клиент
+</button>
+
+        
+  			</form>
+    	</div>
+    </div>
+</div>
+<div id="body">
+<div id="menu">
+	<div class="container"> 
+		<button type="button" class="btn btn-success" id="addsh">Добавить</button>
+		<button type="button" class="btn btn-primary" id="refresh">Обновить</button>
+    <button type="button" class="btn btn-primary pull-right" id="finans">Финансы</button>
+	</div>
+</div>
+<div>
+	<div class="container">
+  <div class="alerts"></div>
+		<div>
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Наши доступы</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Клиентские доступы</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="home">
+          <h2>Наши доступы</h2>
+  			   <table class="table  table-hover" id="pareto">
+            <thead> <tr> <th>#</th> <th>Название</th> <th>Адрес</th> <th>Логин</th> <th>Пароль</th> <th>Доп. инфо</th><th></th><th></th></tr> </thead>
+   				   <tbody id="spisok"> 
+   				 
+   				   </tbody>
+  			   </table>
+
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="profile">
+          <h2>Клиентские доступы</h2>
+
+          <div id="suda"></div>
+
+
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+        	</div>
+        	
+          </div>
+        </div>
+		</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Новый клиент</h4>
+      </div><form  id="addcl"  method="post" action="javascript:void(0);">
+      <div class="modal-body">
+          
+            <div class="form-group">
+              <input type="text" class="form-control" id="nclientname" placeholder="Имя" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-control" id="nclientphone" placeholder="Телефон" required>
+            </div>
+            <div class="form-group">
+              <input type="url" class="form-control" id="nclienturl" placeholder="Сайт" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="nclientemail" placeholder="E-mail" required>
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+        <button type="submit" class="btn btn-primary">Добавить</button>
+        
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+	</div>
+</div>
+</div>
+
+
+
+
+<div id="buff">
+  <div id="b0">
+    
+  </div>
+  <div id="b1">
+    
+  </div>
+  <div id="b2">
+    
+  </div>
+  <div id="b3">
+    
+  </div>
+  <div id="b4">
+    
+  </div>
+  <div id="b5">
+    
+  </div>
+</div>

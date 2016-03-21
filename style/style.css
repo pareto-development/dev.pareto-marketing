@@ -1,0 +1,78 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+nav{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    display: inline-block!important;
+    vertical-align: top;
+    margin-left: -20%;
+}
+
+nav.open{
+    margin-left: 0%;
+}
+
+nav button{
+    width: 100%;
+    height: 10%;
+        min-height: 25px;
+}
+
+#content{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+}
+
+#content.full{
+    width: 100%;
+}
+
+#addform{
+    top: -537px;
+    position: absolute;
+    width: 100%;
+    background-color: #206DDA;
+    transition: all 1s ease-in;
+    padding-bottom: 20px;
+}
+
+#menu{
+	padding: 20px 0;
+}
+
+#body{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	transition: all 1s ease-in;
+}
+
+#buff{
+    display: none;
+}
+
+.options{
+    position: relative;
+    left: 41px;
+    width: 123px;
+    top: -34px;
+    display: none;
+}
+
+td{
+    position: relative;
+}
+
+.options button{
+    width: 100%;
+}
+
+#nclient{
+    display: none;
+}
