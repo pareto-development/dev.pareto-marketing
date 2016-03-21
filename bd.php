@@ -1,8 +1,8 @@
 <?php
 
 $sdb_name = "localhost";
-$user_name = "u933_dev";
-$user_password = "lZ32p237HWAWJCh";
+$user_name = "root";
+$user_password = "";
 $db_name = "u933_dev";
 
 // соединение с сервером базы данных
